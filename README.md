@@ -1,2 +1,2 @@
-# digifixmedia
- It is the site for Digi Fix Media
+# singlepage
+https://arunpkt.github.io/singlepage/

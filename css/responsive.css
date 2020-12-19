@@ -1,0 +1,66 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: -ms-flexbox!important;
+        display: flex!important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    }
+}
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+    .navbar-collapse {
+        left: 0;
+        padding: 0;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+    }
+    nav .accordion-menu {
+        padding: 26px 15px 26px 15px;
+    }
+    nav .accordion-menu {
+        position: initial;
+    }
+    nav.navbar .navbar-nav {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(23, 23, 23, 0.95);
+        padding-right: 1px;
+    }
+    nav.navbar .navbar-nav li {
+        display: block;
+        clear: both;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        border-top: 0;
+    }
+    .navbar-nav li > a, nav.navbar.navbar-default ul.nav > li > a {
+        margin: 0;
+        padding: 9px 15px 8px;
+        color: #c0b5b5;
+        display: block;
+        line-height: normal;
+    }
+    header.sticky nav.navbar .navbar-nav > li > a.active{
+        color: rgba(255,255,255,0.6);
+    }
+}
+@media screen and (max-height: 320px) {
+    nav.navbar.bootsnav.no-full .navbar-collapse {
+        max-height: 240px;
+    }
+}
