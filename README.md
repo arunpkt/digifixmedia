@@ -1,2 +1,2 @@
-# singlepage
-https://arunpkt.github.io/singlepage/
+# Digifixmedia
+https://arunpkt.github.io/digifixmedia/
