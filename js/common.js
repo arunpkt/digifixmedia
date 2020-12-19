@@ -40,6 +40,20 @@ $(document).ready(function() {
         }, 1000);    
         return false;
     });
+    
+    /*==============================================================
+      wow animation - on scroll
+    ==============================================================*/
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: false,
+        live: true
+    });
+    $(window).imagesLoaded(function () {
+        wow.init();
+    });
 
 });
 
