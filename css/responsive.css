@@ -58,6 +58,15 @@
     header.sticky nav.navbar .navbar-nav > li > a.active{
         color: rgba(255,255,255,0.6);
     }
+    header.sticky nav ul.nav > li > a:hover {
+        color: #c0b5b5;
+    }
+    header.sticky nav ul.nav > li.dropdown > div.dropdown-menu {
+        background-color: rgba(0,0,0,0.9);
+    }
+    header.sticky nav ul.nav > li.dropdown > div.dropdown-menu > a{
+        color: rgba(255,255,255,0.7);
+    }
 }
 @media screen and (max-height: 320px) {
     nav.navbar.bootsnav.no-full .navbar-collapse {
