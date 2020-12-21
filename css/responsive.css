@@ -50,7 +50,7 @@
     }
     .navbar-nav li > a, nav.navbar.navbar-default ul.nav > li > a {
         margin: 0;
-        padding: 9px 15px 8px;
+        padding: 13px 15px 13px;
         color: #c0b5b5;
         display: block;
         line-height: normal;
@@ -66,6 +66,20 @@
     }
     header.sticky nav ul.nav > li.dropdown > div.dropdown-menu > a{
         color: rgba(255,255,255,0.7);
+    }
+    header nav ul.nav > li.dropdown > div.dropdown-menu > a {
+        border-bottom: solid 1px #565656;
+        padding: 7px 0px 7px 30px;
+    }
+    header nav ul.nav > li.dropdown > div.dropdown-menu > a:last-child {
+        border-bottom: none;
+    }
+    header.sticky nav ul.nav > li.dropdown > div.dropdown-menu > a {
+        border-bottom: solid 1px #565656;
+        padding: 7px 0px 7px 30px;
+    }
+    header.sticky nav ul.nav > li.dropdown > div.dropdown-menu > a:last-child {
+        border-bottom: none;
     }
 }
 @media screen and (max-height: 320px) {

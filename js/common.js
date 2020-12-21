@@ -73,3 +73,30 @@ $(document).ready(function() {
 function toggle(id){
     $("#" + id).toggle();
 }
+$(window).on("scroll", init_scroll_navigate);
+function init_scroll_navigate() {
+    
+/*==============================================================
+    One Page Main JS - START CODE
+    =============================================================*/
+var menu_links = $(".navbar-nav li a");
+var scrollPos = $(document).scrollTop();
+scrollPos = scrollPos + 60;
+menu_links.each(function () {
+    var currLink = $(this);
+    var hasPos = currLink.attr("href").indexOf("#");
+    if (hasPos > -1) 
+    {
+        var res = currLink.attr("href").substring(hasPos);
+        if ($(res).length > 0) {
+            var refElement = $(res);
+            if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
+                menu_links.not(currLink).removeClass("active");
+                currLink.addClass("active");
+            } else {
+                currLink.removeClass("active");
+            }
+        }
+    }
+});
+}

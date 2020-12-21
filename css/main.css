@@ -267,11 +267,17 @@ Stick right
     color: #fff;
 }
 /*Hero section */
-section.hero {
-    background-image: url('../images/homepage-9-slider-img-1.jpg');
-    background-position: 0px -122.5px;
-    visibility: visible;
-    animation-name: fadeIn;
+.portfolio-grid *, .parallax, .dropdropdown-menu * {
+    transition-timing-function: none;
+    -moz-transition-timing-function: none;
+    -webkit-transition-timing-function: none;
+    -o-transition-timing-function: none;
+    -ms-transition-timing-function: none;
+    transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    -ms-transition-duration: 0s;
 }
 .parallax {
     position: relative;
