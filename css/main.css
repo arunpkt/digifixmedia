@@ -217,7 +217,7 @@ Stick right
     color: #232323;
     font-size: 10px;
     text-transform: uppercase;
-    padding: 2px 10px;
+    padding: 8px 10px;
     display: block;
     text-decoration: none;
     font-weight: 500;
@@ -339,7 +339,7 @@ section.services h5 {
     color: #232323;
     text-transform: uppercase;
 }
-section.services .services_row {
+section.services .services_row:first-child {
     margin: 80px 0;
 }
 .services_wrapper {
@@ -398,4 +398,47 @@ p.service-desc {
 }
 .services_wrapper:hover div, .services_wrapper:hover p  {
     color: #ffffff;
+}
+.services_row {
+    margin-top: 40px;
+}
+/* Contacts starts here */
+.contact input, .contact textarea {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #484848;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    border-radius: 0;
+}
+/* Contact ends here */
+.contact {
+    background: #2f2f2f;
+    color: white;
+}
+section.contact {
+    padding: 0 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.contact-wrapper {
+    padding: 70px 60px;
+}
+section.contact .form-control:focus {
+    background-color: transparent;
+    border: none;
+    border-bottom-color: #80bdff;
+    outline: 0;
+}
+.contact-wrapper .contact_head {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+.contact-wrapper .contact_teaser {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
 }

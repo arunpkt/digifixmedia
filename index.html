@@ -85,7 +85,7 @@
                                       <a class="dropdown-item" href="raidstorage.html">RAID Storages</a>
                                     </div>
                                   </li>
-                                <li class="nav-item"><a href="contactus.html" title="Contact" class="nav-link inner-link">Contact us</a></li>
+                                <li class="nav-item"><a href="#contact" title="Contact" class="nav-link inner-link">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                 </div>
                 <div class="row services_row">
                    <!-- start services item -->
-                   <div class="col-12 col-lg-3 col-md-6  wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                   <div class="col-12  offset-lg-3  col-lg-3 col-md-6  wow fadeIn" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
                     <div class="services_wrapper">
                         <div class="services_icon">
                             <i class="icon-laptop"></i>
@@ -220,13 +220,38 @@
         </div>
     </section>
     <!-- Services section -->
-       <!-- start scroll to top -->
-       <a class="upar scroll-top-arrow" href="javascript:void(0);" style="display: block;">
-        <i class="ti-arrow-up"></i>
+    <!-- Contact section -->
+    <section id="contact" class="contact wow fadeIn" style="visibility: visible;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 wow fadeIn" style="background: url(&quot;images/homepage-9-parallax-img6.jpg&quot;); visibility: visible;">
+                </div>
+                <div class="col-12 col-lg-6 wow fadeIn alt-font contact-wrapper" style="visibility: visible;">
+                    <div class="contact_teaser">Fill out the form and we'll be in touch soon!</div>
+                    <h5 class="contact_head">Ready to request a quote?</h5>
+                    <div>
+                        <form id="contact-form form-control" action="javascript:void(0)" method="post">
+                            <div id="alet alert-success" style="display: none;"></div>
+                            <input type="text" name="name" id="name" placeholder="Name*" class="form-control">
+                            <input type="text" name="email" id="email" placeholder="E-mail*" class="form-control">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                            <textarea name="comment" id="comment" placeholder="Your Message" class="form-control"></textarea>
+                            <div class="text-center"><button id="contact-us-button-2" type="submit" class="btn btn-small btn-primary">send message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section -->
+
+    <!-- start scroll to top -->
+    <a class="upar scroll-top-arrow" href="javascript:void(0);" style="display: block;">
+     <i class="ti-arrow-up"></i>
     </a>
     <!-- end scroll to top  -->
-    <div class="all-demo alt-font md-display-none">
-        <a href="mailto:">
+    <div class="all-demo alt-font md-display-none padding-md-4">
+        <a href="#contact">
             <i class="ti-email"></i>
             <span>Quick Question?</span>
         </a>

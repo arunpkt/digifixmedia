@@ -100,3 +100,18 @@ menu_links.each(function () {
     }
 });
 }
+var scrollAnimationTime = 1200, scrollAnimation = 'easeInOutExpo';
+$(document).on('click', 'a', function (event) {
+    event.preventDefault();
+    var target = this.hash;
+    if ($(target).length != 0) {
+        $('html, body').stop()
+                .animate({
+                    'scrollTop': $(target)
+                            .offset()
+                            .top
+                }, scrollAnimationTime, scrollAnimation, function () {
+                    window.location.hash = target;
+                });
+    }
+});
