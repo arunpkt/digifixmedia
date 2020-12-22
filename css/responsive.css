@@ -83,6 +83,12 @@
     header.sticky nav ul.nav > li.dropdown > div.dropdown-menu > a:last-child {
         border-bottom: none;
     }
+    .sales_wrapper {
+        color: #ffffff;
+        width: 85%;
+        margin: 60px auto;
+        padding: 30px 30px;
+    }
 }
 @media screen and (max-height: 320px) {
     nav.navbar.bootsnav.no-full .navbar-collapse {

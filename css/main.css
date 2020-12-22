@@ -481,7 +481,7 @@ section.contact .form-control:active {
 }
 .sales_right_wrapper {
     color: #6f6f6f;
-    padding: 30px;
+    padding: 50px 50px;
 }
 span.quote.fas.fa-quote-left {
     font-size: 60px;
@@ -497,4 +497,23 @@ p.sales_right_details_head {
 }
 p.sales_right_details {
     font-size: 12px;
+}
+/* Feature */
+.feature_left_wrapper span {
+    font-size: 1.2em;
+}
+.feature_right_wrapper {
+    margin: 30px auto;
+}
+.feature_right_image i {
+    font-size: 40px;
+}
+span.separator-line-verticle {
+    width: 1px;
+    height: 60px;
+    /* float: right; */
+}
+.feature_right_content p {
+    margin: 10px 0px;
+    font-size: 13px;
 }

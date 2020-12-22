@@ -111,6 +111,10 @@ h6 {font-size:25px; line-height:30px}
 .bg-deep-pink-opacity {background-color: rgba(255, 33, 79, 0.85);}
 .bg-charcoal-gray{background-color: #0e0f10;}
 
+.text-deep-pink, .btn.text-deep-pink {
+    color: #ff214f;
+}
+
 /* ===================================
     Custom
 ====================================== */
