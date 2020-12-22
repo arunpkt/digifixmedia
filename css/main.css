@@ -169,7 +169,7 @@ header.sticky .navbar-toggler span.icon-bar {
 Footer
 */
 footer.footer {
-    padding: 40px 0;
+    padding: 25px 0;
     background-color: #ffffff;
 }
 h6.footer.logo {
@@ -417,6 +417,9 @@ p.service-desc {
     background: #2f2f2f;
     color: white;
 }
+.contact text {
+    color: white;
+}
 section.contact {
     padding: 0 0;
     margin: 0 auto;
@@ -427,7 +430,6 @@ section.contact {
 }
 section.contact .form-control:focus {
     background-color: transparent;
-    border: none;
     border-bottom-color: #80bdff;
     outline: 0;
 }
@@ -441,4 +443,13 @@ section.contact .form-control:focus {
     text-align: center;
     text-transform: uppercase;
     font-weight: 200;
+}
+section.contact .form-control {
+    color: #ffffff;
+}
+section.contact .form-control:focus {
+    color: #ffffff;
+}
+section.contact .form-control:active {
+    color: #ffffff;
 }

@@ -60,8 +60,8 @@
                         </button>
                         <div class="navbar-collapse collapse alt-font" id="navbar-collapse-toggle-1">
                             <ul class="nav navbar-nav font-weight-700">
-                                <li class="nav-item"><a href="index.html" title="Home" class="nav-link inner-link active">Home</a></li>
-                                <li class="nav-item"><a href="aboutus.html" title="About us" class="nav-link inner-link">About us</a></li>
+                                <li class="nav-item"><a href="#home" title="Home" class="nav-link inner-link active">Home</a></li>
+                               
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="serviceMenuLink" data-toggle="dropdown">
                                       Services
@@ -80,12 +80,13 @@
                                       Sales
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="salesMenuLink">
-                                      <a class="dropdown-item" href="telecine.html">Telecine</a>
-                                      <a class="dropdown-item" href="disuites.html">DI Suites</a>
-                                      <a class="dropdown-item" href="raidstorage.html">RAID Storages</a>
+                                      <a class="dropdown-item" href="#services">Telecine</a>
+                                      <a class="dropdown-item" href="#services">DI Suites</a>
+                                      <a class="dropdown-item" href="#services">RAID Storages</a>
                                     </div>
                                   </li>
-                                <li class="nav-item"><a href="#contact" title="Contact" class="nav-link inner-link">Contact us</a></li>
+                                  <li class="nav-item"><a href="#about" title="About us" class="nav-link inner-link">About us</a></li>
+                                  <li class="nav-item"><a href="#contact" title="Contact" class="nav-link inner-link">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +96,8 @@
     </header>
     <!-- end header -->
     <!-- start hero section -->
-    <section id="home" class="hero p-0 parallax wow fadeIn" data-stellar-background-ratio="0.5" style='background-image: url("images/homepage-9-slider-img-1.jpg"); background-position: 0px -122.5px; visibility: visible; animation-name: fadeIn;'>
+    <section id="home" class="hero p-0 parallax wow fadeIn" data-stellar-background-ratio="0.5" 
+    style='background-image: url("images/homepage-9-parallax-img1.jpg"); background-position: 0px -122.5px; visibility: visible; animation-name: fadeIn;'>
         <div class="opacity-extra-medium bg-extra-dark-gray"></div>
         <div class="container position-relative full-screen" style="min-height: 576px;">
             <div class="slider-typography text-center">
@@ -224,17 +226,17 @@
     <section id="contact" class="contact wow fadeIn" style="visibility: visible;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-6 wow fadeIn" style="background: url(&quot;images/homepage-9-parallax-img6.jpg&quot;); visibility: visible;">
+                <div class="col-12 col-lg-6 parallax wow fadeIn" style="background: url(&quot;images/homepage-9-parallax-img6.jpg&quot;); visibility: visible;background-position: 0px -122.5px; animation-name: fadeIn;">
                 </div>
-                <div class="col-12 col-lg-6 wow fadeIn alt-font contact-wrapper" style="visibility: visible;">
+                <div class="col-12 col-lg-6 wow fadeIn alt-font contact-wrapper" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                     <div class="contact_teaser">Fill out the form and we'll be in touch soon!</div>
                     <h5 class="contact_head">Ready to request a quote?</h5>
                     <div>
                         <form id="contact-form form-control" action="javascript:void(0)" method="post">
-                            <div id="alet alert-success" style="display: none;"></div>
-                            <input type="text" name="name" id="name" placeholder="Name*" class="form-control">
-                            <input type="text" name="email" id="email" placeholder="E-mail*" class="form-control">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control">
+                            <div class="alert alert-success alert-dismissable" style="display: none;">Form has been submitted successfully</div>
+                            <input type="text" name="name" id="name" placeholder="Name*" class="form-control" required>
+                            <input type="email" name="email" id="email" placeholder="E-mail*" class="form-control" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="form-control" required>
                             <textarea name="comment" id="comment" placeholder="Your Message" class="form-control"></textarea>
                             <div class="text-center"><button id="contact-us-button-2" type="submit" class="btn btn-small btn-primary">send message</button></div>
                         </form>
