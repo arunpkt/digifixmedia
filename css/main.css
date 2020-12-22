@@ -179,6 +179,10 @@ h6.footer.logo {
     display: flex;
     list-style: none;
 }
+.social-icon ul {
+    display: inline-flex;
+    padding: 15px;
+}
 .social-icon ul li{
     margin: 0 8px;
 }
@@ -452,4 +456,45 @@ section.contact .form-control:focus {
 }
 section.contact .form-control:active {
     color: #ffffff;
+}
+/* Sales */
+.overlay_medium  {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+.sales_left_row {
+    position: relative;
+}
+.sales_wrapper {
+    display: inline-table;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+    width: 45%;
+    margin: auto;
+    padding: 30px 30px;
+    position: relative;
+}
+.sales_right_wrapper {
+    color: #6f6f6f;
+    padding: 30px;
+}
+span.quote.fas.fa-quote-left {
+    font-size: 60px;
+    position: absolute;
+    top: -40px;
+    left: 45%;
+}
+h4.sales_right_head {
+    color: #c1c1c1;
+}
+p.sales_right_details_head {
+    font-size: 18px;
+}
+p.sales_right_details {
+    font-size: 12px;
 }
