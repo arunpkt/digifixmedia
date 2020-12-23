@@ -48,7 +48,7 @@ $(document).ready(function() {
         boxClass: 'wow',
         animateClass: 'animated',
         offset: 0,
-        mobile: false,
+        mobile: true,
         live: true
     });
     $(window).imagesLoaded(function () {

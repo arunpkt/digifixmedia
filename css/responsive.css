@@ -89,6 +89,10 @@
         margin: 60px auto;
         padding: 30px 30px;
     }
+    .sales_right_wrapper {
+        color: #6f6f6f;
+        padding: 50px 15px;
+    }
 }
 @media screen and (max-height: 320px) {
     nav.navbar.bootsnav.no-full .navbar-collapse {
