@@ -486,8 +486,8 @@ section.contact .form-control:active {
 span.quote.fas.fa-quote-left {
     font-size: 60px;
     position: absolute;
-    top: -40px;
-    left: 45%;
+    transform: translateY(-100%);
+    left: 42%;
 }
 h4.sales_right_head {
     color: #c1c1c1;
@@ -516,6 +516,9 @@ span.separator-line-verticle {
 .feature_right_content p {
     margin: 10px 0px;
     font-size: 13px;
+}
+.address_wrapper a {
+    font-size: 12px;
 }
 .address .address_wrapper p {
     font-size: 12px;
