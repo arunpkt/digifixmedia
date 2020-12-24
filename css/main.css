@@ -37,6 +37,10 @@ header a.logo {
     display: inline-block;
     vertical-align: middle;
 }
+header a.logo img {
+    width: 200px;
+    height: auto;
+}
 header .logo {
     visibility: visible;
     opacity: 1;
