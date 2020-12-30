@@ -12,30 +12,30 @@ if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
     isiPhoneiPad = true;
 }
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
     stellarParallax();
       /* ===================================
      sticky nav Start
      ====================================== */
-     $(document).scroll(function() {
-        var headerHeight = $('nav').outerHeight();
-        var scrollTop = $(document).scrollTop();
+     jQuery(document).scroll(function() {
+        var headerHeight = jQuery('nav').outerHeight();
+        var scrollTop = jQuery(document).scrollTop();
         if (scrollTop >= headerHeight) {
-            $('header').addClass('sticky');
+            jQuery('header').addClass('sticky');
         } else if (scrollTop <= headerHeight) {
-            $('header').removeClass('sticky');
+            jQuery('header').removeClass('sticky');
         }
     });
     /* Scroll top */
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 600) {
-            $('.upar').fadeIn();
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > 600) {
+            jQuery('.upar').fadeIn();
         } else {
-            $('.upar').fadeOut();
+            jQuery('.upar').fadeOut();
         }
     });
-    $('.upar').click(function() {
-        $('body,html').animate({
+    jQuery('.upar').click(function() {
+        jQuery('body,html').animate({
             scrollTop: 0
         }, 1000);    
         return false;
@@ -51,7 +51,7 @@ $(document).ready(function() {
         mobile: false,
         live: true
     });
-    $(window).imagesLoaded(function () {
+    jQuery(document).ready(function () {
         wow.init();
     });
 });
@@ -60,35 +60,35 @@ $(document).ready(function() {
  //Parallax - START CODE
  ==============================================================*/
  function stellarParallax() {
-    if ($(window).width() > 1024) {
-        $.stellar();
+    if (jQuery(window).width() > 1024) {
+        jQuery.stellar();
     } else {
-        $.stellar('destroy');
-        $('.parallax').css('background-position', '');
+        jQuery.stellar('destroy');
+        jQuery('.parallax').css('background-position', '');
     }
 }
 
 //Toggle search terms
 function toggle(id){
-    $("#" + id).toggle();
+    jQuery("#" + id).toggle();
 }
-$(window).on("scroll", init_scroll_navigate);
+jQuery(window).on("scroll", init_scroll_navigate);
 function init_scroll_navigate() {
     
 /*==============================================================
     One Page Main JS - START CODE
     =============================================================*/
-var menu_links = $(".navbar-nav li a");
-var scrollPos = $(document).scrollTop();
+var menu_links = jQuery(".navbar-nav li a");
+var scrollPos = jQuery(document).scrollTop();
 scrollPos = scrollPos + 60;
 menu_links.each(function () {
-    var currLink = $(this);
+    var currLink = jQuery(this);
     var hasPos = currLink.attr("href").indexOf("#");
     if (hasPos > -1) 
     {
         var res = currLink.attr("href").substring(hasPos);
-        if ($(res).length > 0) {
-            var refElement = $(res);
+        if (jQuery(res).length > 0) {
+            var refElement = jQuery(res);
             if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
                 menu_links.not(currLink).removeClass("active");
                 currLink.addClass("active");
@@ -100,14 +100,41 @@ menu_links.each(function () {
 });
 }
 var scrollAnimationTime = 1200, scrollAnimation = 'easeInOutExpo';
-$(document).on('click', 'a', function (event) {
+jQuery(document).on('click', 'a', function (event) {
     var target = this.hash;
-    if ($(target).length != 0) {
-        $('html, body').animate({
-                    'scrollTop': $(target)
+    if (jQuery(target).length != 0) {
+        jQuery('html, body').animate({
+                    'scrollTop': jQuery(target)
                             .offset()
-                            .top - $("nav.navbar").outerHeight() - 5
+                            .top - jQuery("nav.navbar").outerHeight() - 5
                 }, scrollAnimationTime, scrollAnimation, function () {
                 });
     }
+});
+
+// Contact us submit
+jQuery(document).ready(function() {
+    jQuery("#enquiry_submit").click(function(event){
+        event.preventDefault();
+        var enPoint = jQuery("#admin_ajax_url").val();
+        var formData = new FormData;
+        var formFields = jQuery("#contact-form").serialize();
+        formData.append("action", "enquiry");
+        formData.append("enquiry", formFields);
+        jQuery.ajax({
+        url : enPoint,
+        data : formData,
+        type : 'POST',
+        processData : false,
+        contentType : false,
+        success : function (res) {
+            jQuery("#success_id").fadeIn(2000);
+            jQuery("#contact-form").fadeOut(2000).trigger('reset').fadeIn(2000);
+            alert(res.data);
+        },
+        error : function(res) {
+            alert(res.data);
+        }
+        });
+    });
 });
