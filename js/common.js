@@ -116,6 +116,16 @@ jQuery(document).on('click', 'a', function (event) {
 jQuery(document).ready(function() {
     jQuery("#enquiry_submit").click(function(event){
         event.preventDefault();
+        jQuery("#enquiry_submit").attr("disabled","disabled");
+        var name = jQuery("#name").val();
+        var email = jQuery("#email").val();
+        var phoneno = jQuery("#phoneno").val();
+        var subject = jQuery("#subject").val();
+        if(name == null || name == "" || email == null || email == "" ||phoneno == null || phoneno == "" ||subject == null || subject == "") {
+            jQuery("#error_id").fadeIn(500);
+            jQuery("#success_id").fadeOut(2000);
+            return false;
+        }
         var enPoint = jQuery("#admin_ajax_url").val();
         var formData = new FormData;
         var formFields = jQuery("#contact-form").serialize();
@@ -129,10 +139,13 @@ jQuery(document).ready(function() {
         contentType : false,
         success : function (res) {
             jQuery("#success_id").fadeIn(2000);
+            jQuery("#error_id").fadeOut(500);
             jQuery("#contact-form").fadeOut(2000).trigger('reset').fadeIn(2000);
+            jQuery("#enquiry_submit").removeAttr("disabled");
             alert(res.data);
         },
         error : function(res) {
+            jQuery("#enquiry_submit").removeAttr("disabled");
             alert(res.data);
         }
         });

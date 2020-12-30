@@ -45,7 +45,7 @@
                     <!-- start logo -->
                     <div class="col-auto pl-lg-0">
                         <a href="index.html" title="" class="logo navbar-brand">
-                            <img src="./images/logo.png" class="logo-dark" alt="Digi Fix Media Logo">
+                            <img src="./images/logo_bw.png" class="logo-dark" alt="Digi Fix Media Logo">
                             <img src="./images/logo.png" alt="Digi Fix Media Logo" class="logo-white">
                             <!-- <h6 class="logo-dark">DIGIFIX MEDIA</h6> -->
                         </a>
@@ -70,24 +70,26 @@
                                       <a class="dropdown-item" href="#services">Restoration</a>
                                       <a class="dropdown-item" href="#services">Digitization</a>
                                       <a class="dropdown-item" href="#services">VFX</a>
-                                      <a class="dropdown-item" href="#services">Telecine Conversation</a>
-                                      <a class="dropdown-item" href="#services">Film Production</a>
-                                      <a class="dropdown-item" href="#services">Digital cinema</a>
+                                      <a class="dropdown-item" href="#services">Digit Intermediate(DI)</a>
+                                      <a class="dropdown-item" href="#services">Web series</a>
+                                      <a class="dropdown-item" href="#services">Production OTT</a>
                                     </div>
-                                  </li>
-                                  <li class="nav-item"><a href="#about" title="About us" class="nav-link inner-link">About us</a></li>
-                                  <li class="nav-item dropdown">
+                                </li>
+                                <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="salesMenuLink" data-toggle="dropdown">
-                                      Sales
+                                        Sales
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="salesMenuLink">
-                                      <a class="dropdown-item" href="#feature">Telecine</a>
-                                      <a class="dropdown-item" href="#feature">DI Suites</a>
-                                      <a class="dropdown-item" href="#feature">RAID Storages</a>
+                                        <a class="dropdown-item" href="#feature">Telecine spares</a>
+                                        <a class="dropdown-item" href="#feature">DI Suites</a>
+                                        <a class="dropdown-item" href="#feature">RAID Storages</a>
                                     </div>
-                                  </li>
+                                </li>
+
+                                <li class="nav-item"><a href="#about" title="About us" class="nav-link inner-link">About us</a></li>
                                   
-                                  <li class="nav-item"><a href="#contact" title="Contact" class="nav-link inner-link">Contact us</a></li>
+                                  
+                                <li class="nav-item"><a href="#contact" title="Contact" class="nav-link inner-link">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -97,20 +99,50 @@
     </header>
     <!-- end header -->
     <!-- start hero section -->
-    <section id="home" class="hero p-0 parallax wow fadeIn" data-stellar-background-ratio="0.5" 
-    style='background-image: url("images/homepage-9-parallax-img1.jpg"); background-position: 0px -122.5px; visibility: visible; animation-name: fadeIn;'>
-        <div class="opacity-extra-medium bg-extra-dark-gray"></div>
-        <div class="container position-relative full-screen" style="min-height: 576px;">
-            <div class="slider-typography text-center">
-                <div class="slider-text-middle-main sm-padding-15px-lr">
-                    <div class="slider-text-middle">
-                        <img src="./images/text.png" alt="" data-no-retina="">
+    <section class="hero_carousal">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" data-stellar-ratio="0.5">
+                <div class="carousel-item active" data-interval="30000" >
+                    <img src="images/homepage-9-parallax-img1.jpg" class="d-block w-100"alt="London eye" >
+                    <div class="opacity-extra-medium bg-extra-dark-gray"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>WE OPERATE IN UK</h5>
+                        <p>We pledged to provide the world class services to the British citizens</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="30000" >
+                    <img src="images/homepage-9-parallax-img2.jpg" class="d-block w-100" alt="Canada">
+                    <div class="opacity-extra-medium bg-extra-dark-gray"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>WE OPERATE IN CANADA</h5>
+                        <p>We are the number one provider of goods and services in Canada</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="30000" >
+                    <img src="images/homepage-9-parallax-img3.jpg" class="d-block w-100" alt="Chennai">
+                    <div class="opacity-extra-medium bg-extra-dark-gray"></div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>WE OPERATE IN IN INDIA</h5>
+                        <p>Our domestic teams strive to give support from India</p>
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </section>
-    <!-- end hero section -->
+
     <!-- Start Services section -->
     <section id="services" class="services wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
         <div class="container">
@@ -131,7 +163,7 @@
                             Restoration
                         </div>
                         <p class="service-desc width-75 lg-width-90 mx-auto">
-                            Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.
+                            Digital restoration is an option often pursued for delicate and damaged sentimental photographs and documents so that they may be handled and put on display. 
                         </p>
                         <div class="service-desc_pink_bg"></div>
                     </div>
@@ -147,7 +179,7 @@
                             Digitization
                         </div>
                         <p class="service-desc width-75 lg-width-90 mx-auto">
-                            Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.
+                                Digitization is the conversion of analog to digital, whereas digitalization is the use of digital technologies
                         </p>
                         <div class="service-desc_pink_bg"></div>
                     </div>
@@ -163,7 +195,7 @@
                             VFX
                         </div>
                         <p class="service-desc width-75 lg-width-90 mx-auto">
-                            Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.
+                            Visual effects (sometimes abbreviated VFX) is the process by which imagery is created or manipulated outside the context of a live action shot in filmmaking.
                         </p>
                         <div class="service-desc_pink_bg"></div>
                     </div>
@@ -176,10 +208,10 @@
                             <i class="icon-laptop"></i>
                         </div>
                         <div class="services_head alt-font font-weight-600">
-                            Telecine Conversation
+                            Digit Intermediate(DI)
                         </div>
                         <p class="service-desc width-75 lg-width-90 mx-auto">
-                            Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.
+                                Digital intermediate(DI) is a motion picture finishing process which classically involves digitizing a motion picture and manipulating the color and other image characteristics.
                         </p>
                         <div class="service-desc_pink_bg"></div>
                     </div>
@@ -194,10 +226,10 @@
                             <i class="icon-video"></i>
                         </div>
                         <div class="services_head alt-font font-weight-600">
-                            Film Production
+                            Web series
                         </div>
                         <p class="service-desc width-75 lg-width-90 mx-auto">
-                            Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.
+                                A web series is a series of scripted or non-scripted online videos, generally in episodic form, released on the Internet
                         </p>
                         <div class="service-desc_pink_bg"></div>
                     </div>
@@ -210,11 +242,10 @@
                             <i class="icon-telescope"></i>
                         </div>
                         <div class="services_head alt-font font-weight-600">
-                            Digitial cinema
+                           Production OTT
                         </div>
                         <p class="service-desc width-75 lg-width-90 mx-auto">
-                            Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard dummy.
-                        </p>
+                            OTT (over-the-top) is a means of providing television and film content over the internet at the request and to suit the requirements of the individual consumer.                        </p>
                         <div class="service-desc_pink_bg"></div>
                     </div>
                 </div>
@@ -224,30 +255,21 @@
     </section>
     <!-- Services section -->
 
-    <!-- sales section -->
-    <section id="about" class="sales p-0 wow fadeIn" style="visibility: visible;">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-6 wow fadeInLeft sales_left_row d-flex align-items-center" style="background-image: url(&quot;images/homepage-9-parallax-img4.jpg&quot;); visibility: visible;">
-                    <div class="overlay_medium bg-extra-dark-gray"></div>
-                    <div class="sales_wrapper bg-deep-pink">
-                        <span class="quote fas fa-quote-left"></span>
-                        <h6 class="sales_headr">We design brand, digital experience &amp; marketing campaigns that engage the right customers.</h6>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 wow fadeInRight sales_left_row bg-extra-dark-gray" style="visibility: visible;">
-                    <div class="sales_right_wrapper">
-                        <span class="sales_right_teaser d-block text-center">We create premium designs and technology</span>
-                        <h4 class="alt-font sales_right_head text-center">A digital studio crafting beautiful experiences</h4>
-                        <p class=" sales_right_details_head">We always stay on the cutting edge of digital, so that our clients maintain their competitive advantage online.</p>
-                        <p class="sales_right_details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text.</p>
-                        <div class="text-center"><a href="#contact" class="btn btn-small btn-dark text-center">Contact us</a></div>
-                    </div>
+    <!-- Start Services section -->
+    <section id="video" class="video wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" controls>
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+        <div class="opacity-extra-medium bg-dark-gray"></div>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white main-font">
+                    <h3 class="font-weight-bold">Our sample work</h3>
+                    <p class="lead mb-0">Have a look at our Jaw dropping works</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- sales section -->
 
     <!-- feature section -->
     <section id="feature" class="feature wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
@@ -272,7 +294,7 @@
                                 class="separator-line-verticle bg-deep-pink float-right align-top d-none d-md-block"></span>
                         </div>
                         <div class="col-12 col-lg-9 col-md-8 feature_right_content">
-                            <span class="alt-font d-block">Telecine</span>
+                            <span class="alt-font d-block">Telecine spares</span>
                             <p class="">
                                 Telecine is the process of transferring motion picture film into video and is performed in a color suite. The term is also used to refer to the equipment used in the post-production process. Telecine enables a motion picture, captured originally on film stock, to be viewed with standard video equipment, such as television sets, video cassette recorders (VCR), DVD, Blu-ray Disc or computers.
                             </p>
@@ -322,31 +344,31 @@
         </div>
     </section>
 
-     <!-- Contact section -->
-     <section id="contact" class="contact wow fadeIn" style="visibility: visible;">
+    <!-- sales section -->
+    <section id="about" class="sales p-0 wow fadeIn" style="visibility: visible;">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-lg-6 parallax wow fadeIn" style="background: url(&quot;images/homepage-9-parallax-img6.jpg&quot;); visibility: visible;background-position: 0px -122.5px; animation-name: fadeIn;">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 wow fadeInLeft sales_left_row d-flex align-items-center" style="background-image: url(&quot;images/homepage-9-parallax-img4.jpg&quot;); visibility: visible;">
+                        <div class="overlay_medium bg-extra-dark-gray"></div>
+                        <div class="sales_wrapper bg-deep-pink">
+                            <span class="quote fas fa-quote-left"></span>
+                            <h6 class="sales_headr">We design brand, digital experience &amp; marketing campaigns that engage the right customers.</h6>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-6 wow fadeIn alt-font contact-wrapper" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
-                        <div class="contact_teaser">Fill out the form and we'll be in touch soon!</div>
-                        <h5 class="contact_head">Ready to request a quote?</h5>
-                        <div>
-                            <form id="contact-form form-control" action="javascript:void(0)" method="post">
-                                <div class="alert alert-success alert-dismissable" style="display: none;">Form has been submitted successfully</div>
-                                <input type="text" name="name" id="name" placeholder="Name*" class="form-control" required>
-                                <input type="email" name="email" id="email" placeholder="E-mail*" class="form-control" required>
-                                <input type="tel" id="phoneno" name="phoneno" placeholder="Phone number*" class="form-control" required>
-                                <input type="text" id="subject" name="subject" placeholder="Subject*" class="form-control" required>
-                                <textarea name="comment" id="comment" placeholder="Your Message" class="form-control"></textarea>
-                                <div class="text-center"><button id="contact-us-button-2" type="submit" class="btn btn-small btn-secondary">send message</button></div>
-                            </form>
+                    <div class="col-12 col-lg-6 wow fadeInRight sales_left_row bg-extra-dark-gray" style="visibility: visible;">
+                        <div class="sales_right_wrapper">
+                            <span class="sales_right_teaser d-block text-center">We create premium contents</span>
+                            <h4 class="alt-font sales_right_head text-center">A digital studio crafting beautiful experiences</h4>
+                            <p class=" sales_right_details_head">We always stay on the cutting edge of digital, so that our clients maintain their competitive advantage online.</p>
+                            <p class="sales_right_details">Harness the energy of the digital age with speed and confidence. From vision to reality we help you put digital at the core for sustainable profitable growth.We stand behind innovation as the right way to make today’s business relevant for tomorrow. We recognize that we’re operating in an era where innovation cycles are measured in days and weeks, not months and years, and work with our clients to embed innovation at the center of their business transformation.</p>
+                            <div class="text-center"><a href="#contact" class="btn btn-small btn-dark text-center">Contact us</a></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+        <!-- sales section -->
+
         <!-- address section -->
         <section class="address wow fadeIn" style="visibility: visible;">
             <div class="container">
@@ -410,6 +432,36 @@
             </div>
         </section>
         <!-- Contact section -->
+    <!-- Contact section -->
+    <section id="contact" class="contact wow fadeIn" style="visibility: visible;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 parallax wow fadeIn" style="background: url(&quot;./images/homepage-9-parallax-img6.jpg&quot;); visibility: visible;background-position: 0px -100.5px; animation-name: fadeIn;">
+                </div>
+                <div class="col-12 col-lg-6 wow fadeIn alt-font contact-wrapper" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+                    <div class="contact_teaser">Fill out the form and we'll be in touch soon!</div>
+                    <h5 class="contact_head">Ready to request a quote?</h5>
+                    <div>
+                        <form id="contact-form" class="" action="javascript:void(0)" method="post">
+                            <div id="error_id" class="text-danger" style="display: none;"><p>Please fill all the mandatory fields and submit</p></div>
+                            <div id="success_id" class="text-success" style="display: none;"><p>Form has been submitted successfully</p></div>
+                            <input type="text" name="name" id="name" placeholder="Name*" class="form-control" required>
+                            <input type="email" name="email" id="email" placeholder="E-mail*" class="form-control" required>
+                            <input type="tel" id="phoneno" name="phoneno" placeholder="Phone number*" class="form-control" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject*" class="form-control" required>
+                            <textarea name="comment" id="comment" placeholder="Your Message" class="form-control" required></textarea>
+                            <input type="hidden" id="admin_ajax_url" value="<?php echo admin_url('admin-ajax.php') ?>"/>
+                            <div class="text-center">
+                                <button id="enquiry_submit" type="submit" class="btn btn-small btn-secondary">
+                                    send message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- start scroll to top -->
     <a class="upar scroll-top-arrow" href="javascript:void(0);" style="display: block;">

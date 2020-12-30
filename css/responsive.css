@@ -93,6 +93,14 @@
         color: #6f6f6f;
         padding: 50px 15px;
     }
+    .address_wrapper {
+        margin-bottom: 25px;
+    }
+    .hero_carousal {
+        padding: 0px;
+        width: 100%;
+        height: auto;
+    }
 }
 @media screen and (max-height: 320px) {
     nav.navbar.bootsnav.no-full .navbar-collapse {

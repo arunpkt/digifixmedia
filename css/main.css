@@ -304,6 +304,51 @@ Stick right
 .bg-extra-dark-gray {
     background-color: #1c1c1c;
 }
+.hero_carousal{
+    padding: 0px;
+    width: 100%;
+    height: 600px;
+}
+.hero_carousal .carousel{
+    width: 100%;
+    height: inherit;
+}
+.hero_carousal .carousel-caption {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    border: 5px solid #cccccc29;
+}
+.hero_carousal .carousel-caption h5 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: If;
+}
+.hero_carousal .carousel-caption p {
+    font-family: Montserrat;
+    font-size: 19px;
+}
+.hero_carousal .carousel-inner {
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .0s;
+    -ms-transition-duration: .0s;
+    -moz-transition-duration: .0s;
+    -webkit-transition-duration: .0s;
+    -o-transition-duration: .0s;
+}
 /* scroll top */
 .scroll-top-arrow, .scroll-top-arrow:focus {
     color: #fff;
@@ -385,6 +430,9 @@ p.service-desc {
     margin-bottom: 0;
     width: 75%;
     margin-left: auto!important;
+    max-height: 110px;
+    overflow: hidden;
+    min-height: 110px;
 }
 .service-desc_pink_bg {
     bottom: 0;
@@ -405,7 +453,8 @@ p.service-desc {
     background-color: #ffffff;
 }
 .services_wrapper:hover div, .services_wrapper:hover p  {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: #d1ae46;
 }
 .services_row {
     margin-top: 40px;
@@ -533,3 +582,32 @@ span.separator-line-verticle {
     font-size: 40px;
     margin-bottom: 15px;
 }
+/* Video section */
+section.video {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    padding: 0
+}
+section.video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  section.video .container {
+    position: relative;
+    z-index: 2;
+  }
