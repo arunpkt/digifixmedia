@@ -104,11 +104,12 @@ jQuery(document).on('click', 'a', function (event) {
     var target = this.hash;
     if (jQuery(target).length != 0) {
         jQuery('html, body').animate({
-                    'scrollTop': jQuery(target)
-                            .offset()
-                            .top - jQuery("nav.navbar").outerHeight() - 5
-                }, scrollAnimationTime, scrollAnimation, function () {
-                });
+                'scrollTop': jQuery(target)
+                        .offset()
+                        .top - jQuery("nav.navbar").outerHeight() - 2
+            }, scrollAnimationTime, scrollAnimation, function () {
+            });
+            jQuery(".navbar-collapse").removeClass("collapse").addClass("collapsing").removeClass("show").removeClass("collapsing").addClass("collapse");
     }
 });
 
@@ -117,6 +118,7 @@ jQuery(document).ready(function() {
     jQuery("#enquiry_submit").click(function(event){
         event.preventDefault();
         jQuery("#enquiry_submit").attr("disabled","disabled");
+        jQuery("#overlay").show();
         var name = jQuery("#name").val();
         var email = jQuery("#email").val();
         var phoneno = jQuery("#phoneno").val();
@@ -124,6 +126,7 @@ jQuery(document).ready(function() {
         if(name == null || name == "" || email == null || email == "" ||phoneno == null || phoneno == "" ||subject == null || subject == "") {
             jQuery("#error_id").fadeIn(500);
             jQuery("#success_id").fadeOut(2000);
+            jQuery("#overlay").hide();
             return false;
         }
         var enPoint = jQuery("#admin_ajax_url").val();
@@ -138,16 +141,21 @@ jQuery(document).ready(function() {
         processData : false,
         contentType : false,
         success : function (res) {
+            jQuery("#overlay").hide();
             jQuery("#success_id").fadeIn(2000);
             jQuery("#error_id").fadeOut(500);
-            jQuery("#contact-form").fadeOut(2000).trigger('reset').fadeIn(2000);
+            jQuery("#contact-form").trigger('reset');
             jQuery("#enquiry_submit").removeAttr("disabled");
-            alert(res.data);
+ 
         },
         error : function(res) {
+            jQuery("#overlay").hide();
             jQuery("#enquiry_submit").removeAttr("disabled");
             alert(res.data);
         }
         });
+    });
+    jQuery("#contact-form").change(function(event){
+        jQuery("#enquiry_submit").removeAttr("disabled");
     });
 });

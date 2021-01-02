@@ -137,6 +137,28 @@ label { margin-bottom: 5px; font-weight: 700; }
 .opacity-full {position: absolute; height: 100%; width: 100%; opacity: 0.8; top:0; left: 0;}
 .opacity-full-dark {position: absolute; height: 100%; width: 100%; opacity: 0.9; top:0; left: 0;}
 
+.overlay-extra-medium {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.overlay-extra-medium .spinner-border {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 5rem;
+    height: 5rem;
+    vertical-align: text-bottom;
+    border: 15px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite;
+}
 .opacity1 {opacity:.1}
 .opacity2 {opacity:.2}
 .opacity3 {opacity:.3}

@@ -99,7 +99,7 @@
     </header>
     <!-- end header -->
     <!-- start hero section -->
-    <section class="hero_carousal">
+    <section class="hero_carousal" id="home">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -107,7 +107,7 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" data-stellar-ratio="0.5">
-                <div class="carousel-item active" data-interval="30000" >
+                <div class="carousel-item active">
                     <img src="images/homepage-9-parallax-img1.jpg" class="d-block w-100"alt="London eye" >
                     <div class="opacity-extra-medium bg-extra-dark-gray"></div>
                     <div class="carousel-caption d-none d-md-block">
@@ -115,16 +115,16 @@
                         <p>We pledged to provide the world class services to the British citizens</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-interval="30000" >
-                    <img src="images/homepage-9-parallax-img2.jpg" class="d-block w-100" alt="Canada">
+                <div class="carousel-item">
+                    <img src="images/homepage-9-parallax-img2.jpg" class="d-block w-100 wow" alt="Canada">
                     <div class="opacity-extra-medium bg-extra-dark-gray"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>WE OPERATE IN CANADA</h5>
                         <p>We are the number one provider of goods and services in Canada</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-interval="30000" >
-                    <img src="images/homepage-9-parallax-img3.jpg" class="d-block w-100" alt="Chennai">
+                <div class="carousel-item">
+                    <img src="images/homepage-9-parallax-img3.jpg" class="d-block w-100 wow" alt="Chennai">
                     <div class="opacity-extra-medium bg-extra-dark-gray"></div>
                     <div class="carousel-caption d-none d-md-block">
                         <h5>WE OPERATE IN IN INDIA</h5>
@@ -256,11 +256,13 @@
     <!-- Services section -->
 
     <!-- Start Services section -->
-    <section id="video" class="video wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" controls>
-            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
-        </video>
-        <div class="opacity-extra-medium bg-dark-gray"></div>
+    <section id="video" class="video wow fadeIn embed-responsive" style="visibility: visible; animation-name: fadeIn;" >
+        <div class="hero__background">
+            <video autoplay muted loop>
+                <source src="./videos/free-videos.mp4" type="video/mp4" alt="Video by fauxels from Pexels">
+            </video>
+        </div>
+        <div class="opacity-light bg-dark-gray"></div>
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white main-font">
@@ -269,6 +271,9 @@
                 </div>
             </div>
         </div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RjG-TYC_RWo" 
+        frameborder="0" allow="autoplay;" allowfullscreen autoplay>
+        </iframe> -->
     </section>
 
     <!-- feature section -->
@@ -346,97 +351,98 @@
 
     <!-- sales section -->
     <section id="about" class="sales p-0 wow fadeIn" style="visibility: visible;">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-6 wow fadeInLeft sales_left_row d-flex align-items-center" style="background-image: url(&quot;images/homepage-9-parallax-img4.jpg&quot;); visibility: visible;">
-                        <div class="overlay_medium bg-extra-dark-gray"></div>
-                        <div class="sales_wrapper bg-deep-pink">
-                            <span class="quote fas fa-quote-left"></span>
-                            <h6 class="sales_headr">We design brand, digital experience &amp; marketing campaigns that engage the right customers.</h6>
-                        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 wow fadeInLeft sales_left_row d-flex align-items-center" style="background-image: url(&quot;images/homepage-9-parallax-img4.jpg&quot;); visibility: visible;">
+                    <div class="overlay_medium bg-extra-dark-gray"></div>
+                    <div class="sales_wrapper bg-deep-pink">
+                        <span class="quote fas fa-quote-left"></span>
+                        <h6 class="sales_headr">We design brand, digital experience &amp; marketing campaigns that engage the right customers.</h6>
                     </div>
-                    <div class="col-12 col-lg-6 wow fadeInRight sales_left_row bg-extra-dark-gray" style="visibility: visible;">
-                        <div class="sales_right_wrapper">
-                            <span class="sales_right_teaser d-block text-center">We create premium contents</span>
-                            <h4 class="alt-font sales_right_head text-center">A digital studio crafting beautiful experiences</h4>
-                            <p class=" sales_right_details_head">We always stay on the cutting edge of digital, so that our clients maintain their competitive advantage online.</p>
-                            <p class="sales_right_details">Harness the energy of the digital age with speed and confidence. From vision to reality we help you put digital at the core for sustainable profitable growth.We stand behind innovation as the right way to make today’s business relevant for tomorrow. We recognize that we’re operating in an era where innovation cycles are measured in days and weeks, not months and years, and work with our clients to embed innovation at the center of their business transformation.</p>
-                            <div class="text-center"><a href="#contact" class="btn btn-small btn-dark text-center">Contact us</a></div>
-                        </div>
+                </div>
+                <div class="col-12 col-lg-6 wow fadeInRight sales_left_row bg-extra-dark-gray" style="visibility: visible;">
+                    <div class="sales_right_wrapper">
+                        <span class="sales_right_teaser d-block text-center">We create premium contents</span>
+                        <h4 class="alt-font sales_right_head text-center">A digital studio crafting beautiful experiences</h4>
+                        <p class=" sales_right_details_head">We always stay on the cutting edge of digital, so that our clients maintain their competitive advantage online.</p>
+                        <p class="sales_right_details">Harness the energy of the digital age with speed and confidence. From vision to reality we help you put digital at the core for sustainable profitable growth.We stand behind innovation as the right way to make today’s business relevant for tomorrow. We recognize that we’re operating in an era where innovation cycles are measured in days and weeks, not months and years, and work with our clients to embed innovation at the center of their business transformation.</p>
+                        <div class="text-center"><a href="#contact" class="btn btn-small btn-dark text-center">Contact us</a></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- sales section -->
+        </div>
+    </section>
+    <!-- sales section -->
 
-        <!-- address section -->
-        <section class="address wow fadeIn" style="visibility: visible;">
-            <div class="container">
-                <div class="row">
-                    <!-- start address box item -->
-                    <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.2s;">
-                        <i class="icon-map-pin"></i>
-                        <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
-                            Visit Our Office
-                        </div>
-                        <p class="text-secondary">
-                            401 Broadway,<br> 
-                            24th Floor London, UK 10013.
-                        </p>
-                        <a href="https://www.google.com/maps/place/Vadapalani,+Chennai,+Tamil+Nadu/@13.0521642,80.2026471,15z/data=!3m1!4b1!4m5!3m4!1s0x3a5266bf5a08c45f:0x9478e1cd7e7f1723!8m2!3d13.0499711!4d80.2121306" class="text-deep-pink">GET DIRECTION</a>
+    <!-- address section -->
+    <section class="address wow fadeIn" style="visibility: visible;">
+        <div class="container">
+            <div class="row">
+                <!-- start address box item -->
+                <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.2s;">
+                    <i class="icon-map-pin"></i>
+                    <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
+                        Visit Our Office
                     </div>
-                    <!-- end address box item -->
-
-                    <!-- start address box item -->
-                    <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.4s;">
-                        <i class="icon-chat"></i>
-                        <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
-                            LET'S TALK
-                        </div>
-                        <p class="text-secondary">
-                            Phone: 1-800-222-000<br>
-                            Fax: 1-800-222-002</p>
-                        <a href="contact-us-classic-02.html" class="text-deep-pink">CALL US</a>
-                    </div>
-                    <!-- end address box item -->
-
-                    <!-- start address box item -->
-                    <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.6s;">
-                        <i class="icon-envelope"></i>
-                        <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
-                            E-MAIL US
-                        </div>
-                        <p class="text-secondary">
-                                sales@digifixmedia.com<br>
-                                enquiry@digifixmedia.com<br>
-                                support@digifixmedia.com<br>
-                                admin@digifixmedia.com
-                        </p>
-                        <a href="contact-us-classic-02.html" class="text-deep-pink">SEND E-MAIL</a>
-                    </div>
-                    <!-- end address box item -->
-
-                        <!-- start address box item -->
-                    <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.8s;">
-                        <i class="icon-megaphone"></i>
-                        <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
-                            CUSTOMER SERVICES
-                        </div>
-                        <p class="text-secondary">
-                            Please fill the contact form for the any feedbacks or support needed
-                        </p>
-                        <a href="#contact" class="text-deep-pink">CONTACT US</a>
-                    </div>
-                    <!-- end address box item -->
+                    <p class="text-secondary">
+                        401 Broadway,<br> 
+                        24th Floor London, UK 10013.
+                    </p>
+                    <a href="https://www.google.com/maps/place/Vadapalani,+Chennai,+Tamil+Nadu/@13.0521642,80.2026471,15z/data=!3m1!4b1!4m5!3m4!1s0x3a5266bf5a08c45f:0x9478e1cd7e7f1723!8m2!3d13.0499711!4d80.2121306" class="text-deep-pink">GET DIRECTION</a>
                 </div>
+                <!-- end address box item -->
+
+                <!-- start address box item -->
+                <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.4s;">
+                    <i class="icon-chat"></i>
+                    <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
+                        LET'S TALK
+                    </div>
+                    <p class="text-secondary">
+                        Phone: 1-800-222-000<br>
+                        Fax: 1-800-222-002</p>
+                    <a href="contact-us-classic-02.html" class="text-deep-pink">CALL US</a>
+                </div>
+                <!-- end address box item -->
+
+                <!-- start address box item -->
+                <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.6s;">
+                    <i class="icon-envelope"></i>
+                    <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
+                        E-MAIL US
+                    </div>
+                    <p class="text-secondary">
+                            sales@digifixmedia.com<br>
+                            enquiry@digifixmedia.com<br>
+                            support@digifixmedia.com<br>
+                            admin@digifixmedia.com
+                    </p>
+                    <a href="contact-us-classic-02.html" class="text-deep-pink">SEND E-MAIL</a>
+                </div>
+                <!-- end address box item -->
+
+                    <!-- start address box item -->
+                <div class="col-12 col-lg-3 col-md-6 text-center wow fadeInUp address_wrapper"  style="visibility: visible;animation-delay: 0.8s;">
+                    <i class="icon-megaphone"></i>
+                    <div class="text-extra-dark-gray text-uppercase text-small font-weight-600 alt-font margin-5px-bottom">
+                        CUSTOMER SERVICES
+                    </div>
+                    <p class="text-secondary">
+                        Please fill the contact form for the any feedbacks or support needed
+                    </p>
+                    <a href="#contact" class="text-deep-pink">CONTACT US</a>
+                </div>
+                <!-- end address box item -->
             </div>
-        </section>
-        <!-- Contact section -->
+        </div>
+    </section>
+    <!-- Contact section -->
+
     <!-- Contact section -->
     <section id="contact" class="contact wow fadeIn" style="visibility: visible;">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-6 parallax wow fadeIn" style="background: url(&quot;./images/homepage-9-parallax-img6.jpg&quot;); visibility: visible;background-position: 0px -100.5px; animation-name: fadeIn;">
+                <div class="col-12 col-lg-6 parallax wow fadeIn" data-stellar-background-ratio="0.5" style="background: url(&quot;./images/contact_us.jpg&quot;); visibility: visible;background-position: 0px 0px; animation-name: fadeIn;">
                 </div>
                 <div class="col-12 col-lg-6 wow fadeIn alt-font contact-wrapper" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                     <div class="contact_teaser">Fill out the form and we'll be in touch soon!</div>
@@ -473,6 +479,11 @@
             <i class="ti-email"></i>
             <span>Quick Question?</span>
         </a>
+    </div>
+    <!-- Loader icon -->
+    <div class="overlay-extra-medium bg-extra-dark-gray" id="overlay" style="display:none;">
+        <div class="spinner-border text-light" role="status">
+        </div>
     </div>
     <!-- start footer -->
     <footer class="footer">
